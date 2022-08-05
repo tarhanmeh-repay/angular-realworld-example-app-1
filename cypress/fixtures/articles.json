@@ -1,0 +1,115 @@
+{
+    "articles": [
+        {
+            "slug": "Hamid-67289",
+            "title": "Hamid",
+            "description": "Tarhan",
+            "body": "life",
+            "tagList": [],
+            "createdAt": "2022-07-19T01:44:17.163Z",
+            "updatedAt": "2022-07-19T01:44:17.163Z",
+            "favorited": false,
+            "favoritesCount": 5,
+            "author": {
+                "username": "tarhanmeh",
+                "bio": null,
+                "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+                "following": false
+            }
+        },
+        {
+            "slug": "This-is-a-title-67289",
+            "title": "This is a title",
+            "description": "This is a description",
+            "body": "This is a body of the article",
+            "tagList": [],
+            "createdAt": "2022-07-18T21:26:57.919Z",
+            "updatedAt": "2022-07-18T21:26:57.919Z",
+            "favorited": false,
+            "favoritesCount": 5,
+            "author": {
+                "username": "tarhanmeh",
+                "bio": null,
+                "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+                "following": false
+            }
+        },
+        {
+            "slug": "azad-67289",
+            "title": "azad",
+            "description": "ryan",
+            "body": "life",
+            "tagList": [],
+            "createdAt": "2022-07-18T18:35:41.314Z",
+            "updatedAt": "2022-07-18T18:35:41.314Z",
+            "favorited": false,
+            "favoritesCount": 100,
+            "author": {
+                "username": "tarhanmeh",
+                "bio": null,
+                "image": "https://api.realworld.io/images/smiley-cyrus.jpeg",
+                "following": false
+            }
+        },
+        {
+            "slug": "Create-a-new-implementation-1",
+            "title": "Create a new implementation",
+            "description": "join the community by creating a new implementation",
+            "body": "Share your knowledge and enpower the community by creating a new implementation",
+            "tagList": [
+                "implementations"
+            ],
+            "createdAt": "2021-11-24T12:11:08.212Z",
+            "updatedAt": "2021-11-24T12:11:08.212Z",
+            "favorited": false,
+            "favoritesCount": 3145,
+            "author": {
+                "username": "Gerome",
+                "bio": null,
+                "image": "https://api.realworld.io/images/demo-avatar.png",
+                "following": false
+            }
+        },
+        {
+            "slug": "Explore-implementations-1",
+            "title": "Explore implementations",
+            "description": "discover the implementations created by the RealWorld community",
+            "body": "Over 100 implementations have been created using various languages, libraries, and frameworks.\n\nExplore them on CodebaseShow.",
+            "tagList": [
+                "codebaseShow",
+                "implementations"
+            ],
+            "createdAt": "2021-11-24T12:11:07.952Z",
+            "updatedAt": "2021-11-24T12:11:07.952Z",
+            "favorited": false,
+            "favoritesCount": 1828,
+            "author": {
+                "username": "Gerome",
+                "bio": null,
+                "image": "https://api.realworld.io/images/demo-avatar.png",
+                "following": false
+            }
+        },
+        {
+            "slug": "Welcome-to-RealWorld-project-1",
+            "title": "Welcome to RealWorld project",
+            "description": "Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more",
+            "body": "See how the exact same Medium.com clone (called Conduit) is built using different frontends and backends. Yes, you can mix and match them, because they all adhere to the same API spec",
+            "tagList": [
+                "welcome",
+                "introduction"
+            ],
+            "createdAt": "2021-11-24T12:11:07.557Z",
+            "updatedAt": "2021-11-24T12:11:07.557Z",
+            "favorited": false,
+            "favoritesCount": 1294,
+            "author": {
+                "username": "Gerome",
+                "bio": null,
+                "image": "https://api.realworld.io/images/demo-avatar.png",
+                "following": false
+            }
+        }
+    ],
+    "articlesCount": 6
+}

@@ -8,7 +8,12 @@
     "build": "ng build --prod  --base-href ./ && cp CNAME dist/CNAME",
     "test": "ng test",
     "lint": "ng lint --force",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "delete:reports": "rm -r cypress/results/* || true",
+    "mochawesome:merge": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json",
+    "cypress:run": "npx run cypress",
+    "cypress:run_qa": "npx cypress run --env configFile=qa",
+    "cypress:e2e": "start-test start http://localhost:4200 cypress:run"
   },
   "pre-commit": [
     "lint"
@@ -27,6 +32,7 @@
     "marked": "^0.3.9",
     "rxjs": "^6.4.0",
     "tslib": "^2.0.0",
+    "yarn": "^1.22.19",
     "zone.js": "~0.11.3"
   },
   "devDependencies": {
@@ -38,17 +44,25 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.1",
-    "cypress": "^10.4.0",
+    "cypress": "^10.3.0",
+    "cypress-multi-reporters": "^1.6.1",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
+    "junit-merge": "^2.0.0",
     "karma": "~5.0.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-cli": "~1.0.1",
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "mocha": "^10.0.0",
+    "mocha-junit-reporter": "^2.0.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0",
     "pre-commit": "^1.2.2",
     "protractor": "~7.0.0",
+    "start-server-and-test": "^1.14.0",
     "ts-node": "~4.1.0",
     "tslint": "~6.1.0",
     "typescript": "4.1.5"
