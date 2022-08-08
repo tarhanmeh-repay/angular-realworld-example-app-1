@@ -38,4 +38,3 @@ module.exports = defineConfig({
     "apiUrl": "https://api.realworld.io/"
   }
 })
-

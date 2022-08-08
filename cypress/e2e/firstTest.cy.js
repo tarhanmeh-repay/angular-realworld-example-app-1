@@ -6,9 +6,6 @@ describe('Test with backend', () => {
         cy.intercept({ method: 'Get', path: 'tags' }, { fixture: 'tags.json' })
         cy.loginToApp()
     })
-    // it('should login', () => {
-    //     cy.log("Good job:)")
-    // })
 
     it('verify correct request and response', () => {
 
@@ -23,7 +20,7 @@ describe('Test with backend', () => {
         cy.wait('@postArticles')
         cy.get('@postArticles').then(xhr => {
             console.log(xhr)
-            //xpect(xhr.response.statusCode).to.eq(307)
+            //expect(xhr.response.status).to.eq(200)
             expect(xhr.request.body.article.body).to.equal('This is a body of the article')
             expect(xhr.request.body.article.description).to.equal('This is a description')
 
@@ -35,13 +32,6 @@ describe('Test with backend', () => {
         cy.intercept('POST', '**/articles', (req)=> {
             req.body.article.description ='This is a description 2'
         }).as('postArticles')   //allians: is Cypress global variable
-
-        // cy.intercept('POST', '**/articles', (req) => { 
-        //     req.reply(res => {
-        //         expect(res.body.article.description).to.equal('This is a description')
-        //         res.body.article.description= "This is a description 2"
-        //     })
-        // }).as('postArticles')
 
         cy.contains('New Article').click()
         cy.get('[formcontrolname="title"]').type('This is a title')
@@ -85,7 +75,7 @@ describe('Test with backend', () => {
         cy.get('app-article-list button')
             .eq(0)
             .click()
-        //.should('contain', '6') 
+        .should('contain', '1') 
 
     })
 
@@ -117,7 +107,7 @@ describe('Test with backend', () => {
                 headers: {'Authorization': 'Token '+token },
                 method: 'GET'
             }).its('body').then(body=>{
-                expect(body.articles[0].title).not.to.equal('Request from API')
+                expect(body.articles[0].title).not.to.equal('Request from Batman-7272')
             })
         })
     })
